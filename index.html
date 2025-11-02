@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Games</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    }
+    body{
+        height: 100vh;
+        background: linear-gradient(135deg,rgb(251, 0, 255),rgba(0, 255, 225, 0.979),rgba(255, 225, 192, 0.755),
+        rgb(251, 0, 255),rgba(0, 255, 225, 0.979));
+    }
+    h1{
+        margin-top: 20px;
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    #numbergame,#rpsgame{
+        margin: 30px;
+        display: inline-block;
+        height: 200px;
+        width: 500px;
+        border: 1px solid rgb(3, 2, 2);
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: 30%;
+    }
+    details{
+        margin-top: 18px;
+    }
+    summary{
+        margin-top: 5px;
+    }
+    ul li{
+        margin-left: 16px;
+    }
+    .Check{
+        font-size: x-small;
+        text-align: center;
+        margin: 10px;
+    }
+    .btn{
+        padding: 10px;
+        margin-left: 40%; 
+        margin-top: 10px;
+        border: 1px solid rgba(0, 255, 225, 0.979);
+        border-radius: 10px;
+        background-color: rgb(251, 0, 255);
+        cursor: pointer;
+
+    }
+        </style>
+        <script src="index.js" defer></script>
+    </head>
+<body>
+    <h1>Welcome to the Guessing world!</h1>
+    <div id="numbergame">
+        <h2>Number Guessing</h2>
+        <details>
+            <summary style="font-weight: bold;">Rules & Regulations</summary>
+            <ul><li>You should enter a number</li>
+            <li>Alphabets and Special Charachters are not allowed</li>
+            <li>If your guessing is equals to computer's random number "You Win"</li>
+            <li>Three chances will be given to you</li></ul>
+        </details>
+        <a href="number.html"><button class="btn">Play Game</button></a>
+        <p class="Check">Check rules before Play Game</p>
+    </div><br>
+    <div id="rpsgame">
+        <h2>Rock Paper Scissor</h2>
+        <details>
+            <summary style="font-weight: bold;">Rules & Regulations</summary>
+            <ul><li>You should enter "Rock" "Paper" "Scissor"</li>
+            <li>Other than the above three are not allowed</li>
+            <li>If your guessing is equals to computer' random guessing "You Win"</li>
+            <li>Three chances will be given to you</li></ul>
+        </details>
+        <a href="rockps.html"><button class="btn">Play Game</button></a>
+        <p class="Check">Check rules before Play Game</p>
+    </div>
+    </div>
+</body>
+</html>
