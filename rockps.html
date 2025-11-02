@@ -4,81 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number guess game</title>
-    <style>
-        body {
-            background-image: url(files/rockps.jpg);
-            background-size: cover;
-            text-align: center;
-        }
-        .screen{
-            background-color: black;
-            opacity: 0.8;
-            z-index: 1;
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            top: 0px;
-            left: 0px;
-            display: none;
-        }
-        .pop{
-            z-index: 2;
-            color: white;
-            font-size: 40px;
-            font-family: 'Arial Black', Arial, sans-serif;
-            text-align: center;
-            position: absolute;
-            top: 48%;
-            left: 49%;
-            transform: translate(-50%, -50%);
-            background-color: rgb(111, 255, 0);
-            display: none;
-            height: 250px;
-            width: 500px;
-            padding-top: 125px;
-        }
-        .d{
-            margin-top: 150px;
-            font-family: Arial, sans-serif;
-            border: 1px solid black;
-            border-radius: 10px;
-            display: inline-block;
-            height: 280px;
-            width: 500px;
-        }
-        h1{
-            background-color: gray;
-            display: inline-block;
-            height: 80px;
-            width: 80%;
-            padding-top: 5px;
-            border-radius: 3px;
-        }
-        input {
-            padding: 10px;
-            font-size: 16px;
-            width: 200px;
-            margin-bottom: 18px;
-            border-radius: 5px;
-        }
-        p{
-            color: red;
-            display: none;
-            font-size: x-small;
-        }
-        button {
-            padding: 8px 16px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: black;
-            color: white;
-            border-radius: 5px;
-            transition: cubic-bezier(0.23, 1, 0.320, 1);
-             &:hover{
-            transform: scale(1.03);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="rockps.css">
     <script src="rockps.js" defer></script>
 </head>
 <body>
@@ -91,4 +17,5 @@
     <button onclick="play()">Check</button>
     </div>  
 </body>
+
 </html>
